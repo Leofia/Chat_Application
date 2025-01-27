@@ -96,7 +96,7 @@ The client interface displays messages, user statuses, and user input.
 
 ## Contributing
 
-Feel free to contribute to this project! Here are some things you can do:
+Feel free to contribute to this project. Here are some things you can do:
 
 -   Bug fixes
 -   New features
