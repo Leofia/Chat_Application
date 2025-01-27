@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" style="-fx-background-color: #ffffff; -fx-padding: 20;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="chatapp.ClientController">
+    <HBox alignment="CENTER" spacing="10">
+        <Label style="-fx-font-size: 26px; -fx-text-fill: #6fa3f7; -fx-font-weight: bold; -fx-font-family: 'Arial'; -fx-effect: dropshadow(gaussian, #6fa3f7, 5, 0.5, 2, 2);" text="Welcome to the Chat" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-pref-width: 250px; -fx-background-color: #ffffff; -fx-border-radius: 15px; -fx-border-color: #b6d7a8; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+        <Button fx:id="connectButton" onAction="#connect" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 10px; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-effect: dropshadow(gaussian, #4CAF50, 5, 0.5, 2, 2);" text="Connect" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="20">
+        <VBox spacing="20" style="-fx-background-color: #ffffff; -fx-border-radius: 15px; -fx-border-color: #b6d7a8; -fx-border-width: 2; -fx-padding: 10; -fx-effect: dropshadow(gaussian, #b6d7a8, 5, 0.5, 2, 2);">
+            <TextArea fx:id="userStatusArea" editable="false" prefHeight="200" prefWidth="300" style="-fx-font-size: 14px; -fx-background-color: #e6f0d4; -fx-text-fill: #3e7c3c;" />
+            <TextArea fx:id="chatArea" editable="false" prefHeight="300" prefWidth="300" style="-fx-font-size: 14px; -fx-background-color: #e6f0d4; -fx-text-fill: #3e7c3c;" />
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10;">
+        <TextField fx:id="inputField" promptText="Type a message..." style="-fx-pref-width: 200px; -fx-background-color: #ffffff; -fx-border-radius: 15px; -fx-border-color: #b6d7a8; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+        <Button fx:id="sendButton" onAction="#sendMessage" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-border-radius: 10px; -fx-font-size: 14px; -fx-font-family: 'Arial';" text="Send" />
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button fx:id="leaveButton" onAction="#leaveChat" style="-fx-background-color: #ff3333; -fx-text-fill: white; -fx-border-radius: 10px; -fx-font-size: 14px; -fx-font-family: 'Arial';" text="Leave Chat" />
+    </HBox>
+
+  
+</VBox>

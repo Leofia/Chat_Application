@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatapp.ServerController" style="-fx-background-color: #f0f4f8; -fx-padding: 10;">
+    <Label text="Server Log" style="-fx-font-size: 18px; -fx-text-fill: #2196F3;"/>
+    <TextArea fx:id="logArea" editable="false" prefHeight="400" prefWidth="400" style="-fx-background-color: #ffffff; -fx-border-color: #2196F3; -fx-border-width: 2; -fx-font-size: 14px;"/>
+    <Button fx:id="stopButton" text="Stop Server" onAction="#stopServer" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 14px;"/>
+</VBox>
